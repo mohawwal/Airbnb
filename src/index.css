@@ -1,13 +1,142 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    font-family: sans-serif;
+    background-color:  white
+}
+@media (min-width: 10px){
+  body{
+    background-color: rgb(233, 242, 250);
+    
+  }
+  .hero-photo{
+    margin: 0px;
+    width: 250px;
+  }
+}
+@media (min-width: 391px) and (max-width: 630px){
+  body{
+    background-color: rgb(233, 242, 250);
+    padding: 0px;
+  }
+  .pcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (min-width:630px ) and (max-width: 934px){
+  body{
+    background-color: white;
+    padding: 10px 100px;
+  }
+  .hero-photo{
+    margin-left: 45px;
+  }
+  .pcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (min-width:935px ) and (max-width: 1269px) {
+  body{
+    padding: 0px 200px;
+  }
+  .hero-photo{
+    margin-left: 130px;
+  }
+  .pcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (min-width:1269px ) {
+  body{
+    padding: 0px 350px;
+    background-color: white;
+  }
+  .hero-photo{
+    margin-left: 200px;
+    width: 900px;
+  }
+  .hero-text,
+  .hero-header{
+    margin-top: 0px;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+ 
+  .pcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    overflow: auto;
+    margin: 50px;
+  }
+}
+.All{
+  background-color: rgb(233, 242, 250);
+  border-radius: 10px;
+}
+.Navs{
+  display: flex;
+  margin: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px #0606061a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Navs > img{
+  width: 91px;
+  padding: 0px 8px;
+ 
+}
+
+section{
+  padding: 20px;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+.hero-photo{
+  max-width: 330px;
+  align-self: center;
+}
+.hero-header{
+  margin-bottom: 16px;
+}
+.hero-text{
+  margin-top: 0px;
+}
+.card{
+  max-width: 100%;
+  font-size: 15px;
+  padding: 5px 10px;
+  margin: 0px;
+}
+.card-img{
+  width: 150px;
+  border-radius: 9px;
+  height: 210px;
+}
+.card-stats{
+  display: flex;
+  align-items: center;
+}
+.card-star{
+  height: 14px;
+}
+.grey{
+  color: rgb(190, 190, 190);
+}
+.bold{
+  font-weight: bold;
+}
+.pcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow: auto;
 }
